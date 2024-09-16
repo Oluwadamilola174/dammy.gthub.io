@@ -1,0 +1,128 @@
+
+body {
+  background-image: url();
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.app-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.profile-info h2,
+.profile-info p {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Editable Profile Form */
+.profile-edit-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-edit-form input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.button-primary,
+.button-secondary {
+    background-color: pink;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px;
+    display: inline-block;
+}
+
+.button-primary:hover {
+    background-color:  #ff6347;
+}
+
+.button-secondary {
+    background-color: pink;
+}
+
+.button-secondary:hover {
+    background-color: yellowgreen;
+}
+
+/* Edit Profile Button */
+.edit-profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: pink;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    .app-container {
+        padding: 10px;
+    }
+
+    .profile-edit-form input {
+        width: calc(100% - 20px);
+    }
+}

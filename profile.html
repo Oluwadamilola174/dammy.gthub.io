@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Fitness - Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Zenith Fitness</h1>
+    </header>
+
+    <div class="app-container">
+        <!-- Profile Section -->
+        <section class="profile active">
+            <div class="profile-info">
+                <!-- Profile Picture with File Input -->
+                <label for="profile-picture-input">
+                    <img src="https://via.placeholder.com/100" alt="Profile Picture" id="profile-picture">
+                </label>
+                <input type="file" id="profile-picture-input" accept="image/*" style="display: none;" onchange="uploadProfilePicture()">
+                
+                <h2 id="name-display">John Doe</h2>
+                <p id="email-display">johndoe@example.com</p>
+                <p id="joined-date">Joined: January 2023</p>
+            </div>
+
+            <!-- Editable form (hidden initially) -->
+            <div class="profile-edit-form" style="display: none;">
+                <input type="text" id="name-input" value="John Doe">
+                <input type="email" id="email-input" value="johndoe@example.com">
+                <button class="button-primary" onclick="saveProfile()">Save</button>
+                <button class="button-secondary" onclick="cancelEdit()">Cancel</button>
+            </div>
+
+            <div class="edit-profile">
+                <button id="edit-profile-btn" class="button-primary" onclick="editProfile()">Edit Profile</button>
+            </div>
+        </section>
+    </div>
+
+    <nav class="navbar">
+        <a href="home.html">Dashboard</a>
+        <a href="workout.html">Workout</a>
+        <a href="profile.html" class="active">Profile</a>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

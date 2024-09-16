@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Fitness App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zenith Fitness</h1>
+    </header>
+
+    <div class="app-container">
+                <!-- Workouts Section -->
+                <section class="workouts active">
+                    <h1>Your Workouts</h1>
+                    <div class="workout-list">
+                        <ul>
+                            <li>
+                                <div>
+                                    <h3>Squats</h3>
+                                    <p>45 minutes</p>
+                                </div>
+                                <button class="button-primary" onclick="startWorkout('Upper Body Strength', 45)">Start</button>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Push Ups</h3>
+                                    <p>30 minutes</p>
+                                </div>
+                                <button class="button-primary" onclick="startWorkout('HIIT Cardio', 30)">Start</button>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Lunges</h3>
+                                    <p>60 minutes</p>
+                                </div>
+                                <button class="button-primary" onclick="startWorkout('Yoga Flow', 60)">Start</button>
+                                
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Yoga Flow</h3>
+                                    <p>60 minutes</p>
+                                </div>
+                                <button class="button-primary" onclick="startWorkout('Yoga Flow', 60)">Start</button>
+                                
+                            </li>
+                            <li>
+                                <div>
+                                    <h3>Dancing Fitness</h3>
+                                    <p>60 minutes</p>
+                                </div>
+                                <button class="button-primary" onclick="startWorkout('Yoga Flow', 60)">Start</button>
+                                
+                            </li>
+                        </ul>
+                    
+                </section>
+                <!-- Timer Section -->
+        <section class="timer-section">
+            <h1 id="workout-name"></h1>
+            <div class="timer" id="timer">00:00</div>
+            <button class="button-primary" onclick="stopWorkout()">Stop Workout</button>
+        </section>
+         <!-- History Section -->
+         <section class="history">
+            <h1>Workout History</h1>
+            <div class="history-list">
+                <ul id="history-list">
+                    <!-- Workout history will be added here -->
+                </ul>
+            </div>
+        </section>
+        </div>
+                <nav class="navbar">
+                    <a href="home.html" class="active" onclick="showSection('dashboard')">Dashboard</a>
+                    <a href="history.html" onclick="showSection('history')">History</a>
+                    <a href="profile.html" onclick="showSection('profile')">Profile</a>
+                </nav>
+            
+                <script src="app.js"></script>
+            </body>
+            
+            </html>
